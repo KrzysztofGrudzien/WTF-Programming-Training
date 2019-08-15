@@ -16,28 +16,43 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
     font-size: 1rem;
     font-family: 'Roboto', sans-serif;
     color: #232735;
     background-color: #EEEEEE;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: [start main] 95vh [footer] auto [footer end];
-    grid-template-areas:
-        "main main main main"
-        "footer footer footer footer";
+}
+
+.header {
+    width: 100%;
 }
 
 .header__logo{
     padding-left: 20px;
 }
 
+.nav {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
 .main {
-    grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .footer {
-    grid-area: footer;
+    padding: 20px;
     font-size: 0.75rem;
     text-align: center;
 }
