@@ -17,7 +17,42 @@ html {
 
 body {
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
     color: #232735;
     background-color: #EEEEEE;
-    font-family: 'Roboto', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: [start main] 95vh [footer] auto [footer end];
+    grid-template-areas:
+        "main main main main"
+        "footer footer footer footer";
 }
+
+.header__logo{
+    padding-left: 20px;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+    font-size: 0.75rem;
+    text-align: center;
+}
+
+.footer__link:link,
+.footer__link:visited,
+.footer__link:active  {
+    color: #232735;
+}
+
+.footer__link:hover {
+    color: #697296;
+}
+
+
+
+
+
