@@ -7,18 +7,48 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="description"
         content="Project created for all persons taking part in the programming training WTF (What the frontend?)" />
-    <meta property="og:title" content="HydrApp" />
+    <meta property="og:title" content="WTF Programming Training" />
     <meta property="og:description"
         content="Project created for all persons taking part in the programming training WTF (What the frontend?)" />
     <meta property="og:url" content="https://github.com/KrzysztofGrudzien/WTF-Programming-Training" />
     <meta property="og:image" content="" />
-    <link rel="icon" type="image/png" href="resource/icons/icon-192x192.png" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/main.css" />
     <title>WTF Programming Training</title>
 </head>
 
 <body>
-    <h1>Hello! WTF crew 😊</h1>
+    <main>
+        <header class="header">
+            <h1 class="header__logo">WTF CREW - begginer frontend developers</h1>
+        </header>
+        <nav class="nav">
+            <button class="nav__btn nav__btn--welcome">welcome</button>
+            <button class="nav__btn nav__btn--rules">rules</button>
+            <button class="nav__btn nav__btn--github">github</button>
+            <button class="nav__btn nav__btn--resources">resources</button>
+        </nav>
+        <section class="content">
+            <h2 class="content__header">WTF CREW - begginer frontend developers</h2>
+            <article class="article">
+                <h2 class="article__header">welcome</h2>
+            </article>
+            <article class="article" hidden>
+                <h2 class="article__header" hidden>rules</h2>
+            </article>
+            <article class="article" hidden>
+                <h2 class="article__header" hidden>github</h2>
+            </article>
+            <article class="article" hidden>
+                <h2 class="article__header" hidden>resources</h2>
+            </article>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="footer__copyright">All rights reserved by WTF members. Designed by <a class="footer__link"
+                href="criscode.pl" target="_blank">Krzysztof Grudzień</a></p>
+    </footer>
 </body>
 
 </html>
