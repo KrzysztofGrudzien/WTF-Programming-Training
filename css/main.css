@@ -178,6 +178,15 @@ body {
     color: #697296;
 }
 
+.article__list, .tasks__list {
+    margin: 20px 0 40px 20px;
+}
+
+.tasks__header {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
 .main {
     display: flex;
     flex-wrap: wrap;
