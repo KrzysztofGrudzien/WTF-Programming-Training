@@ -157,6 +157,27 @@ body {
     border-radius: 50% 50% 0 0;
 }
 
+.article__header {
+    margin-top: 20px;
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.article__link {
+    display: block;
+    margin: 15px 0;
+}
+
+.article__link:link,
+.article__link:visited,
+.article__link:active {
+    color: #232735;
+}
+
+.article__link:hover {
+    color: #697296;
+}
+
 .main {
     display: flex;
     flex-wrap: wrap;
