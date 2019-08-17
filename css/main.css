@@ -47,6 +47,16 @@ body {
     /* width: 20%; */
 }
 
+@media screen and (max-width: 686px){
+    .nav {
+        width: 100%;
+    }
+
+    .nav__btn {
+        width: 100%;
+    }
+}
+
 .nav__btn {
     width: 200px;
     padding: 12px;
@@ -78,6 +88,19 @@ body {
     color: #232735;
 }
 
+@media screen and (max-width: 686px){
+    .nav {
+        width: 100%;
+        align-items: center;
+    }
+
+    .nav__btn {
+        width: 90%;
+        /* display: flex; */
+        text-align: center;
+    }
+}
+
 .content {
     display: flex;
     flex-direction: column;
@@ -96,13 +119,14 @@ body {
     }
 }
 
-/* @media screen and (max-width: 686px){
+@media screen and (max-width: 686px){
     .content {
     width: 100%;
     margin-top: 30px;
     text-align: center;
     }
-} */
+}
+
 .content__header {
     font-weight: 300;
     font-size: 3rem;
@@ -123,6 +147,12 @@ body {
     display: flex;
     align-items: center;
     margin-top: 50px;
+}
+
+@media screen and (max-width: 900px){
+    .graphics {
+    justify-content: center;
+}
 }
 
 .graphics__icon-figma {
